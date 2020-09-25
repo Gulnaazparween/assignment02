@@ -60,6 +60,64 @@ a.active,a:hover{
 
 
 
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-left: 180px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 19px;
+  border: none;
+  outline: none;
+  color: #F7C610;
+  padding: 20px 10px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+display: none;
+position: absolute;
+margin-left: 100px;
+margin-top: -25px;
+background-color: #F7C610;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropbtn:hover{
+    color: #F7C610;
+    transition: .5s;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+background-color: #ddd;
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+
+
 @media (max-width: 1000px){
   label.logo{
     font-size: 30px;
